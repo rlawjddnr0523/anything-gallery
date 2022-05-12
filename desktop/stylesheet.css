@@ -1,0 +1,77 @@
+.toplogo > img {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-drag: none;
+    -webkit-touch-callout: none;
+}
+
+body {
+
+}
+.toplogo > img{
+    height: 91px;
+    width: 1000px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.items > ul > li > a {
+    text-decoration-line: none;
+    color: white;
+}
+li {
+    list-style: none;
+}
+.items {
+    background: darkorange;
+}
+.items ul {
+    width: 500px;
+    margin: 0 auto;
+}
+.items ul li {
+    float: left;
+    width: 25%;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+    background: darkorange;
+}
+.items ul li > a {
+    display: block;
+}
+.items ul li > a:hover {
+    background: black;
+    color: orange;
+}
+.redirectbuttns ul {
+    width: 300px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.redirectbuttns > ul > li > a {
+    text-decoration-line: none;
+    color: white;
+}
+.redirectbuttns{
+    background: darkorange;
+}
+.redirectbuttns ul li {
+    float:left;
+    width: 25%;
+    height: 100%;
+    line-height: 50px;
+    text-align: center;
+    background: darkorange;
+}
+.redirectbuttns ul li > a {
+    display: block;
+}
+.redirectbuttns ul li > a:hover {
+    background: black;
+    color: orange;
+}
