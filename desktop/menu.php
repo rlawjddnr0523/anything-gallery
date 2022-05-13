@@ -2,16 +2,13 @@
     <div class="items">
         <ul>
             <li>
-                <a href="#">menu1</a>
+                <a href="index.php">메인화면</a>
             </li>
             <li>
-                <a href="#">menu2</a>
+                <a href="gallery.php">갤러리</a>
             </li>
             <li>
-                <a href="#">menu3</a>
-            </li>
-            <li>
-                <a href="#">menu4</a>
+                <a href="mgallery.php">마이너갤러리</a>
             </li>
         </ul>
     </div>

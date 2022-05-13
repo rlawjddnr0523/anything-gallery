@@ -75,3 +75,30 @@ li {
     background: black;
     color: orange;
 }
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: 1fr auto;
+}
+.footer {
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-top: 1px solid gray;
+    height: 100px;
+}
+.footeritem > a {
+    text-decoration-line: none;
+    color: gray;
+}
+.footeritems > span {
+    color: gray;
+}
+.footeritem {
+    margin: 10px 10px 0 10px;
+}
+.footeritems {
+    margin: 10px 0 0 0;
+}
