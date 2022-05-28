@@ -102,3 +102,10 @@ body {
 .footeritems {
     margin: 10px 0 0 0;
 }
+.form1 {
+    margin: 0 auto;
+
+}
+ul li {
+    list-style: none;
+}
