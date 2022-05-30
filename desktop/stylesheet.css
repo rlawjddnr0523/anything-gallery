@@ -115,10 +115,17 @@ ul li {
     height: 400px;
     text-align: left;
 }
-.form2 {
+.form2{
     width: 370px;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 20px;
+    text-align: center;
+}
+.form3 {
+    width: 200px;
+    margin-right: auto;
+    margin-left: auto;
     margin-top: 20px;
     text-align: center;
 }
