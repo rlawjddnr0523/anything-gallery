@@ -36,5 +36,16 @@ if(isset($_SESSION['master1']) === false) { ?>
             </li>
         </ul>
     </div><?php
+} else {
+    ?><div class="redirectbuttns">
+        <ul>
+            <li>
+                <a href="myinfo.php">내 프로필</a>
+            </li>
+            <li>
+                <a href="logout.php">로그아웃</a>
+            </li>
+        </ul>
+    </div><?php
 }
 ?>
