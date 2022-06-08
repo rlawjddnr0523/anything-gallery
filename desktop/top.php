@@ -40,7 +40,7 @@ if(isset($_SESSION['master1']) === false) { ?>
     ?><div class="redirectbuttns">
         <ul>
             <li>
-                <a href="myinfo.php">내 프로필</a>
+                <a href="myinfo.php?memid=<?php echo $_SESSION['master2']; ?> ">내 프로필</a>
             </li>
             <li>
                 <a href="logout.php">로그아웃</a>

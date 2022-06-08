@@ -3,11 +3,6 @@
 ?>
 <div class="mainitems">
     <p class="href"><a href="createg.php">갤러리 만들기</a></p>
-    <ul>
-        <li>
-            <a href="#"></a>
-        </li>
-    </ul>
 </div>
 </div>
 </body>
