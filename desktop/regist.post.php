@@ -29,6 +29,15 @@ $ownnum = GenerateString(20);
 
 $mysqli = mysqli_connect("localhost", "kjwook0523", "Kimmark4167*", "kjwook0523");
 
+$query1 = "SELECT * FROM edm_acc WHERE id = {'$id'}";
+
+$result1 = mysqli_query($mysqli , $query1);
+
+if(isset($result1) === true) {
+    ?><script>alert("존재하는 아이디 입니다."); location.href="register1.php";</script><?php
+    exit();
+}
+
 $query = "INSERT INTO edm_acc (id,pwd,name,yy,mm,dd,created,ownid) values('$id','$pwd','$name','$biry','$birm','$bird','$created','$ownnum')";
 
 $result = mysqli_query($mysqli, $query);
