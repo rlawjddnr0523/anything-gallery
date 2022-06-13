@@ -13,12 +13,17 @@
         </div>
     </div>
     <?php
-        
+        $mysqli = mysqli_connect("localhost", "kjwook0523", "Kimmark4167*", "kjwook0523");
+        $query = "SELECT * FROM edm_g where gc = 'y'";
+        $result = mysqli_query($mysqli, $query);
+        while($row = mysqli_fetch_array($result)) {
+            ?>
+                <a class="gall-2" href="galleryview.php?name=<?php echo $row['gtitle']; ?>"><?php echo $row['gtitle']; ?></a>
+        <?php
+        }
     ?>
-    <div class="gall-2">
-        <a href="#">갤러리 1</a>
-        <a href="#">갤러리 2</a>
-    </div>
+
+
 </div>
 </div>
 </body>
