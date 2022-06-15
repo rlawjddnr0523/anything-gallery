@@ -7,17 +7,13 @@
     $id = $_SESSION['master1'];
     $gc = "y";
 
-    $query1 = "SELECT * FROM edm_g WHERE gtitle = {'$title'}";
-    $mysqliq = mysqli_query($mysqli ,$query1);
-    if(isset($mysqliq) === true) {
+    $query1 = "SELECT * FROM edm_g WHERE gtitle = '$title'";
+    $result1 = mysqli_query($mysqli ,$query1);
+    $fetch = mysqli_fetch_array($result1);
+    if($fetch) {
         ?><script>alert("이미 있는 갤러리 입니다."); history.back();</script><?php
         exit();
     }
-    $query2 = "CREATE TABLE {'$title'} (
-    title varchar(100),
-    contents varchar(1000),
-    
-    )";
     $query = "INSERT into edm_g (gtitle, gcn, gc, gcd) values('".$title."', '".$id."' , '".$gc."', '".$created."')";
     $result = mysqli_query($mysqli , $query);
     if($result) {
