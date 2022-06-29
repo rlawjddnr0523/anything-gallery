@@ -10,6 +10,25 @@
 body {
 
 }
+h1 {
+    font-size: 40px;
+}
+h2 {
+    font-size: 35px;
+}
+h3{
+    font-size: 30px;
+}
+h4{
+    font-size: 25px;
+}
+h5{
+    font-size: 20px;
+}
+h6{
+    font-size: 15px;
+    color: grey;
+}
 .toplogo > img{
     height: 91px;
     width: 1000px;
@@ -160,4 +179,13 @@ ul li {
 }
 .gv-1-2 {
     margin-left: 1fr;
+}
+.pv-5 > h6 {
+    border-bottom: 2px solid grey;
+}
+.pv-5 {
+    margin-bottom: 3px;
+}
+.pv {
+    margin-left: 20px;
 }

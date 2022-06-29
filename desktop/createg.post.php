@@ -6,6 +6,29 @@
     $created = date("Y-m-d H:i:sa");
     $id = $_SESSION['master1'];
     $gc = "y";
+    $sss = "1";
+
+    $query2 = "SELECT * FROM edm_acc WHERE id = '$id'";
+    $result2 = mysqli_query($mysqli, $query2);
+    $fetch1 = mysqli_fetch_array($result2);
+    if($fetch1['gcc'] == "3"){
+        ?><script>alert("당신은 이미 3번의 갤러리 생성 권한을 사용하셨습니다.");history.back()</script><?php
+        exit();
+    } else {
+        $gcc = $fetch1['gcc'] + 1;
+        echo "펫치1 = $fetch1[gcc]";
+        echo "gcc 값 = $gcc";
+        $query3 = "UPDATE edm_acc SET gcc = '$gcc' WHERE id = '$id'";
+        echo "쿼리 값 = $query3";
+        $result3 = mysqli_query($mysqli, $query3);
+        if($result3) {
+            ?>
+                <script>
+                    alert("정상 처리 되었습니다.");
+                </script>
+            <?php
+        }
+    }
 
     $query1 = "SELECT * FROM edm_g WHERE gtitle = '$title'";
     $result1 = mysqli_query($mysqli ,$query1);
